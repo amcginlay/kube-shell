@@ -34,8 +34,8 @@ The current set of tools installed with `kube-shell` are as follows:
 
 | Tool | Version | 
 | - | - |
-| [docker](https://docs.docker.com/engine/reference/commandline/cli/) | latest |
-| [aws](https://github.com/aws/aws-cli) | latest |
+| [docker CLI](https://docs.docker.com/engine/reference/commandline/cli/) | latest |
+| [aws CLI](https://github.com/aws/aws-cli) | latest |
 | [eksctl](https://eksctl.io/) | 0.115.0 |
 | [kubectl](https://kubernetes.io/docs/tasks/tools/) | 1.25.3 |
 | [kind](https://kind.sigs.k8s.io/) | 0.11.1 |
