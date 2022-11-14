@@ -15,7 +15,6 @@ But, today, you've got a loaner laptop (MacOS) with none of that is installed, b
 From the directory hosting your `git clone` of this repo, perform the following steps.
 ```
 # Linux/MacOS
-cd ./demos/
 ./kube-shell.sh
 
 # Windows (untested)
