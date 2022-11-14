@@ -12,6 +12,8 @@ But, today, you've got a loaner laptop (MacOS) with none of that is installed, b
 
 # Steps
 
+Start by cloning this repo ... go on, do it now!
+
 From the directory hosting your `git clone` of this repo, perform the following steps.
 ```
 # Linux/MacOS
