@@ -43,22 +43,18 @@ The current set of tools installed with `kube-shell` are as follows.
 | [jsctl](https://github.com/jetstack/jsctl) | 0.1.14 |
 | [cmctl](https://cert-manager.io/docs/reference/cmctl/) | 1.10.0 |
 | [vcert](https://support.venafi.com/hc/en-us/articles/217991528-Introducing-VCert-API-Abstraction-for-DevOps) | 4.22.1 |
-<<<<<<< HEAD
-| [aws](https://github.com/aws/aws-cli) | latest |
-| [helm](https://helm.sh/) | latest |
 
 ## Verify installs
 
 You may check the availability of these tools as follows.
 ```
 docker --version
+aws --version
+helm version
+eksctl version
 kubectl version --client --output=json
 kind version
 jsctl --version
 cmctl version
 vcert --version
-aws --version
-helm version
 ```
-=======
->>>>>>> de7a4821fe959078a068f9680e3e24e4ef8a9f3e
