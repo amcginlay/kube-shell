@@ -17,7 +17,7 @@ Start by grabbing a `git clone` of this repo ... go on, do it now!
 From the directory hosting your clone of this repo, perform the following steps.
 ```
 # Linux/MacOS
-brew install coreutils # <tactical fix!>
+brew install coreutils       # <-- tactical fix!
 ./kube-shell.sh
 
 # Windows (untested)
