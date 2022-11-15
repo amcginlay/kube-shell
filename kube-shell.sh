@@ -1,9 +1,5 @@
 #!/bin/sh
 
-realpath() {
-    [[ $1 = /* ]] && echo "$1" || echo "$PWD/${1#./}"
-}
-
 SCRIPTDIR=$(dirname $(realpath $0))
 WORKDIR=$(realpath ${1:-.} --relative-base $0)
 
