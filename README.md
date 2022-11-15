@@ -29,9 +29,9 @@ k8sh $
 
 ## Tools
 
-The current set of tools installed with `kube-shell` are as follows:
+The current set of tools installed with `kube-shell` are as follows.
 
-| Tool | Version | 
+| Tool | Version |
 | - | - |
 | [eksctl](https://eksctl.io/) | 0.115.0 |
 | [kubectl](https://kubernetes.io/docs/tasks/tools/) | 1.25.3 |
@@ -41,3 +41,17 @@ The current set of tools installed with `kube-shell` are as follows:
 | [vcert](https://support.venafi.com/hc/en-us/articles/217991528-Introducing-VCert-API-Abstraction-for-DevOps) | 4.22.1 |
 | [aws](https://github.com/aws/aws-cli) | latest |
 | [helm](https://helm.sh/) | latest |
+
+## Verify installs
+
+You may check the availability of these tools as follows.
+```
+docker --version
+kubectl version --client --output=json
+kind version
+jsctl --version
+cmctl version
+vcert --version
+aws --version
+helm version
+```
