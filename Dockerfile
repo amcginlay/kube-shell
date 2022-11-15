@@ -29,11 +29,10 @@ RUN apt update \
  && curl -sSL -o cmctl.tar.gz https://github.com/cert-manager/cert-manager/releases/download/v${CMCTL_VERSION}/cmctl-$(uname -s)-$(uname -m | sed s/aarch64/arm64/g).tar.gz \
  && tar xzf cmctl.tar.gz \
  && mv cmctl /usr/local/bin \
- && rm -rf awscliv2.zip aws cmctl.tar.gz \
  && curl -LO https://github.com/Venafi/vcert/releases/download/v4.22.1/vcert_v${VCERT_VERSION}_linux.zip \
  && unzip vcert_v${VCERT_VERSION}_linux.zip \
  && mv vcert /usr/local/bin \
- && rm -rf vcert_v${VCERT_VERSION}_linux.zip vcert_linux.sig \
+ && rm -rf awscliv2.zip aws cmctl.tar.gz vcert_v${VCERT_VERSION}_linux.zip vcert_linux.sig \
  && echo "source /usr/share/bash-completion/bash_completion" >> ~/.bashrc \
  && echo "source <(kubectl completion bash)" >> ~/.bashrc \
  && echo "alias k=kubectl" >> ~/.bashrc \
