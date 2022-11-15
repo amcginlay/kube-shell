@@ -24,7 +24,7 @@ brew install coreutils       # <-- tactical fix for missing 'realpath' binary!
 ... TBD!
 ```
 
-NOTE `kube-shell.sh` defaults to ${PWD} as the working directory, but you can supply any alternative directory as an argument.
+NOTE `kube-shell.sh` defaults to `${PWD}` as the working directory, but you can supply any alternative directory (e.g. `${HOME}`) as an argument.
 
 Upon success the following command line prompt will appear.
 ```
