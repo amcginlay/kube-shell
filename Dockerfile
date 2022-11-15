@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM --platform=linux/amd64 ubuntu:22.04
 ENV EKSCTL_VERSION=0.115.0
 ENV KUBECTL_VERSION=1.25.3
 ENV KIND_VERSION=0.11.1
@@ -26,7 +26,7 @@ RUN apt update \
  && curl -LO https://github.com/jetstack/jsctl/releases/download/v$JSCTL_VERSION/$(cat /tmp/JSCTL_ARCHIVE) \
  && tar -zxvf $(cat /tmp/JSCTL_ARCHIVE) \
  && mv ./$(cat /tmp/JSCTL_ASSET_REF)/jsctl /usr/local/bin/jsctl \
- && curl -sSL -o cmctl.tar.gz https://github.com/cert-manager/cert-manager/releases/download/v${CMCTL_VERSION}/cmctl-$(uname -s)-$(uname -m | sed s/aarch64/arm64/g).tar.gz \
+ && curl -sSL -o cmctl.tar.gz https://github.com/cert-manager/cert-manager/releases/download/v${CMCTL_VERSION}/cmctl-$(uname -s)-$(uname -m | sed s/x86_64/amd64/g).tar.gz \
  && tar xzf cmctl.tar.gz \
  && mv cmctl /usr/local/bin \
  && curl -LO https://github.com/Venafi/vcert/releases/download/v4.22.1/vcert_v${VCERT_VERSION}_linux.zip \

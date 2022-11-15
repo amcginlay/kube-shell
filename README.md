@@ -55,6 +55,6 @@ eksctl version
 kubectl version --client --output=json
 kind version
 jsctl --version
-cmctl version
+cmctl version --client
 vcert --version
 ```
