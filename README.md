@@ -23,6 +23,8 @@ From the directory hosting your clone of this repo, perform the following steps.
 ...
 ```
 
+NOTE `kube-shell.sh` defaults to ${PWD} as the working directory, but you can supply any alternative directory as an argument.
+
 Upon success the following command line prompt will appear.
 ```
 k8sh $
