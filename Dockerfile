@@ -8,7 +8,7 @@ ENV VCERT_VERSION=4.22.1
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update \
  && apt upgrade -y \
- && apt install -y git curl unzip vim less pv bash-completion gettext-base docker-compose \
+ && apt install -y jq git curl unzip vim less pv bash-completion gettext-base docker-compose \
  && curl --silent "https://awscli.amazonaws.com/awscli-exe-linux-$(uname -m).zip" -o "awscliv2.zip" \
  && unzip awscliv2.zip \
  && ./aws/install \
