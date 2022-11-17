@@ -42,7 +42,7 @@ The current set of tools installed with `kube-shell` are as follows.
 | [helm](https://helm.sh/) | latest |
 | [eksctl](https://eksctl.io/) | 0.115.0 |
 | [kubectl](https://kubernetes.io/docs/tasks/tools/) | 1.25.4 |
-| [kind](https://kind.sigs.k8s.io/) | 0.11.1 |
+| [kind](https://kind.sigs.k8s.io/) | 0.17.0 |
 | [jsctl](https://github.com/jetstack/jsctl) | 0.1.14 |
 | [cmctl](https://cert-manager.io/docs/reference/cmctl/) | 1.10.0 |
 | [vcert](https://support.venafi.com/hc/en-us/articles/217991528-Introducing-VCert-API-Abstraction-for-DevOps) | 4.22.1 |
